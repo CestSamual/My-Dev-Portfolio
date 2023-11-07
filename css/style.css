@@ -7,6 +7,178 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: rgb(87, 86, 86);
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: #2d283e;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+#nav-bar h1 {
+  background-color: #8860d0;
+  padding-left: 4%;
+  padding-right: 0.5%;
+  font-size: xx-large;
+  color: #2d283e ;
+}
+
+#navigation {
+  display: flex;
+  margin-left: auto;
+  width: 30%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#navigation p {
+  cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold
+}
+
+#navigation a {
+  color: #8860d0;
+}
+
+.hero-banner {
+  position: relative;
+  background-image: url("../images/02-hero-bg.jpg");
+  height: 200px;
+  width: 100%;
+}
+
+.hero-banner h2 {
+  position: absolute;
+  bottom: 7%;
+  right: 1%;
+  padding: 0.2%; 
+  background-color: #8860d0;
+  color: #2d283e;
+}
+
+.page-wrapper{
+  display: grid;
+  grid-template-rows: 600px 600px 600px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: 
+  "about-me"
+  "my-work"
+  "contact-me"
+  ;
+}
+
+#about-me, #my-work, #contact-me{
+  display: flex;
+  align-items: baseline;
+  justify-items: right;
+  border-right: 5px solid #2d283e;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+#about, #work, #contact {
+  margin: 0px 5%;
+}
+
+img {
+  width: 70%;
+}
+
+#profile{
+  grid-area: profile ;
+}
+
+#bio{
+  grid-area: bio;
+  font-size: larger;
+}
+
+#about{
+  margin: 0px 5%;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 500px;
+  grid-template-columns: 1fr 1fr  1fr;
+  grid-template-areas:
+  "profile bio bio"
+  ;
+}
+
+#contact a{
+  color: #8860d0;
+  font-weight: bold;
+}
+
+#work {
+  margin: 0px 5%;
+  display:grid;
+  grid-template-rows: 290px 290px;
+  grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: 
+"Horiseon Placeholder1 Placeholder2"
+"Horiseon Placeholder3 Placeholder4"
+;
+}
+
+#Horiseon{
+  grid-area: Horiseon;
+  background-image: url(../images/Horiseon\ Refactor.jpg);
+}
+
+#Placeholder1{
+  grid-area: Placeholder1;
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+#Placeholder2{
+  grid-area: Placeholder2;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+#Placeholder3{
+  grid-area: Placeholder3;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+
+#Placeholder4{
+  grid-area: Placeholder4;
+  background-image: url(../images/02-portfolio-4.jpg);
+}
+
+.project-grid-area{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1%;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading{
+  background-color: #8760d0ec;
+  font-weight: bold;
+  color: #2d283e;
+  border-bottom: 5px solid #2d283e;
+  
+}
+.heading1{
+  padding-top: 108%;
+  
+}
+
+.heading2{
+  padding: 25%;
+  
+}
+
+#contact a{
+  display:inline-flex;
+  justify-content: space-between;
 }
 
 h1,
