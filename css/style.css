@@ -72,9 +72,6 @@ body {
 }
 
 #about-me, #my-work, #contact-me{
-  display: flex;
-  align-items: baseline;
-  justify-items: right;
   border-right: 5px solid #2d283e;
   padding-left: 5%;
   padding-top: 2%;
@@ -192,4 +189,46 @@ h6 {
 
 p {
   margin: 0;
+}
+
+@media only screen and (max-width: 600px){
+  
+  .page-wrapper{
+    display: grid;
+    grid-template-rows: 75px 950px 100px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "about-me"
+    "my-work"
+    "contact-me"
+    ;
+  }
+  
+  #about{
+    grid-template-rows: 500px 500px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "profile"
+    "bio"
+    ;
+
+  }
+  .heading1{
+    padding-top: 54%;
+  }
+  
+  #work {
+    margin: 0px 5%;
+    display:grid;
+    grid-template-rows: 290px 290px 290px 290px;
+    grid-template-columns: 1fr ;
+  grid-template-areas: 
+  "Horiseon"
+  "Placeholder1"
+  "Placeholder2"
+  "Placeholder3"
+  "Placeholder4"
+
+  ;
+  }
 }
