@@ -12,19 +12,13 @@
 <body>
   <!-- main logo / nav -->
   <header>
+  <nav id="nav-bar">
     <h1>Sam Cowell</h1>
-    <nav>
-      <ul>
-        <li>
-          <a href="#about">About me</a>
-        </li>
-        <li>
-          <a href="#work">My Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact Me</a>
-        </li>
-      </ul>
+      <div id="navigation">   
+          <p><a href="#about">About me</a></p>
+          <p><a href="#work">My Work</a></p>
+          <p><a href="#contact">Contact Me</a></p>
+      </div>
     </nav>
   </header>
 
@@ -37,29 +31,47 @@
 
   <main class="page-wrapper">
     <!-- about me -->
+    <h2 id="about-me">About Me</h2>
     <section class="page-section" id="about">
-      <h2>About Me</h2>
-      <img src="images/ProfilePhoto.JPG" alt="Profile Photo">
-      <p>This is website is a portfolio showcasing my work as a front-end software developer. My goal is to become a qualified, professional full-stack developer.
-        Outside of this I pass my time with passions such as skateboarding, hiking, record collecting and all things video games - another area to delve into from a software development standpoint.
-        Below is a collection of projects I have worked on so far:
+      <img id="profile" src="images/ProfilePhoto.JPG" alt="Profile Photo">
+      <p id="bio">This is website is a portfolio showcasing my work as a front-end software developer.
+         My goal is to become a qualified, professional full-stack developer.
+         Outside of this I pass my time with passions such as skateboarding, hiking, record collecting and all things video games - another area to delve into from a software development standpoint.
+         Below is a collection of projects I have worked on so far:
       </p>
     </section>
 
     <!-- portfolio container -->
+    <h2 id="my-work">My Work</h2>
     <section class="page-section" id="work">
-      <h2>My Work</h2>
-      <img src="images/Horiseon Refactor.jpg" alt="Horiseon Refactor Project">
+        <div id="Horiseon" class="project-grid-area">
+         <a class="heading1" href="https://cestsamual.github.io/Horiseon-Refactor/"></a>
+         <a class="heading" href="https://cestsamual.github.io/Horiseon-Refactor/">Horiseon Refactor</a>
+        </div>
+        <div id="Placeholder1" class="project-grid-area">
+          <a class="heading2" href=""></a>
+          <a class="heading" href="">Portfolio Placeholder 1</a>
+        </div>
+        <div id="Placeholder2" class="project-grid-area">
+          <a class="heading2" href=""></a>
+          <a class="heading" href="">Portfolio Placeholder 2</a>
+        </div>
+        <div id="Placeholder3" class="project-grid-area">
+          <a class="heading2" href=""></a>
+          <a class="heading" href="">Portfolio Placeholder 3</a>
+        </div>
+        <div id="Placeholder4" class="project-grid-area">
+          <a class="heading2" href=""></a>
+          <a class="heading" href="">Portfolio Placeholder 4</a>
+        </div>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-      <ul>
-        <li>Linked In</li>
-        <li>Github</li>
-        <li>Spotify</li>
-      </ul>
+    <h2 id="contact-me">Contact Me</h2>
+    <section class="page-section" id="contact">
+      <a href="https://uk.linkedin.com/in/samual-cowell-3a0b00180">Linked In</a>
+      <a href="https://github.com/CestSamual">Github</a>
+      <a href="https://open.spotify.com/user/ytxah1sqkln1acahikc6qxati?si=a210eaab50f4454b">Spotify</a>
     </section>
   </main>
 </body>
